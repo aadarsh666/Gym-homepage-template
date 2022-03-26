@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoart" content="width=device-width, initial-scale=1.0">
+    <title>Aadarsh Fitness Club</title>
+    <!--Adding Favicon Here-->
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+</head>
+<style>
+    /*----------CSS Reset----------*/
+    body{
+        font-family: 'Roboto Serif', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /*----------Adding background here----------*/
+        background: url('image/indexbg.png');
+        background-repeat: no-repeat;
+    }
+
+    /*----------left div style----------*/
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    /*----------left div image style----------*/
+    .left img {
+        width: 110px;
+        background: transparent;
+        filter: invert(100%);
+    }
+
+    /*----------Styling mid div----------*/
+    .left div{
+        float: inline-end;
+        font-family: 'Roboto Serif', sans-serif;
+        text-align: center;
+    }
+
+    /*----------Styling mid div----------*/
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 29px auto;
+    }
+
+    /*----------Styling right div----------*/
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+    }
+
+    /*----------Styling navbar div----------*/
+    .navbar {
+        display: inline-block;
+    }
+
+    /*----------Styling the list of navigation bar----------*/
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    /*----------Styling  div----------*/
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+
+    /*----------Styling mid div----------*/
+    .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+    }
+
+    /*----------Styling mid div----------*/
+    .btn {
+        font-family: 'Rubik', sans-serif;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /*----------Styling mid div----------*/
+    .btn:hover {
+        background-color: gray;
+    }
+
+    /*----------Styling mid div----------*/
+    .container {
+        border: 2px solid white;
+        margin: 90px 80px;
+        padding: 75px;
+        width: 35%;
+        border-radius: 28px;
+    }
+
+    /*----------Styling mid div----------*/
+    .form-group input {
+        font-size: 25px;
+        margin: 11px auto;
+        text-align: center;
+        display: block;
+        width: 448px;
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 1px;
+    }
+
+    /*----------Styling mid div----------*/
+    .container h1 {
+        text-align: center;
+    }
+
+    /*----------Styling the buttons ----------*/
+    .container button {
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--Leftbox for logo-->
+        <div class="left">
+            <img src="image/logo.png" alt="Fitness Club">
+            <div>Fitness Club</div>
+        </div>
+        <!--Mid box for nevigation-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="exercise.html">Exercises</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Gorakhpur Now!</h1>
+        <form action="noactio.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
