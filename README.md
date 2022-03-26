@@ -1,1 +1,1 @@
-# Gym-homepage-template
+# Gym-Homepage-Template
